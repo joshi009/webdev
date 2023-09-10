@@ -1,0 +1,23 @@
+/* defining external style */
+h1{
+    color: black;
+}
+
+h2{
+    color: blue;
+}
+
+h3{
+    color: red;
+}
+h4{
+    color: red;
+}
+
+body{
+    background-image: url('background3.jpeg');
+    background-position: right top;
+    background-attachment: scroll;
+    color: black;
+    /* opacity: 0.9; */
+}

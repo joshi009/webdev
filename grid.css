@@ -1,0 +1,57 @@
+/* style for grid application */
+body{
+    background:rgb(17, 2, 2);
+
+}
+#header{
+    /* background:black ; */
+    text-align: center;
+}
+
+.slogan{
+    text-align: center;
+    color: white;
+}
+
+#slog{
+    font-size: 38px;
+    font-family:'Arial Narrow';
+}
+.slogan p{
+    font-size: 18px;
+}
+.slogan span{
+    color: rgb(19, 255, 19);
+    font-size: 22px;
+}
+.beware{
+    font: size 10px;
+}
+.gridbox{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;
+    margin: auto;
+    /* background: cyan; */
+    column-gap: 10px;
+}
+.gridbox img{
+    width:100%;
+    height: 80%;
+}
+.gridbox a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+.gridbox a:hover{
+    color: red;
+    text-decoration: underline;
+
+}
+.gridbox div div{
+    color:green
+}

@@ -1,0 +1,55 @@
+<!--   
+    Display property
+     
+    grid==>option used to display html element in column format and row format(tablar)
+       Syn:   display:grid;
+                  Nrows x 1col,no space,equal size
+
+
+    grid-template-column==>prop used to specify size of each column and no.of columns
+        Syn:grid-template-column:col1 col2 col3.....;
+
+    column-gap==> it provides space between column to column
+        syn:  column-gap:Npx;
+            
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Web Page</title>
+    <link rel="icon" href="icon2.png">
+    <!-- <link rel="stylesheet" href="jkl.css"> -->
+
+</head>
+
+<body>
+    <!--main container  -->
+    <div
+        style="font-size:32px;color:black;display: grid;grid-template-columns:auto auto auto;column-gap:40px;row-gap:30px;text-align:center;">
+        <!-- grid-template-column:200px 400px 500px; 
+       OR
+    gird-template-column:30% 40%-->
+
+
+        <!-- sub containers -->
+        <div style="background:red;"><!--content-->January</div>
+        <div style="background:green;">February</div>
+        <div style="background:chocolate;">March</div>
+        <div style="background:maroon;">April</div>
+        <div style="background:sandybrown;">May</div>
+        <div style="background:mediumorchid;"><!--content-->June</div>
+        <div style="background:skyblue;">July</div>
+        <div style="background:yellow;">August</div>
+        <div style="background:greenyellow;">September</div>
+        <div style="background:mediumvioletred;">October</div>
+        <div style="background:aqua;">November</div>
+        <div style="background:sandybrown;">December</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let x=24,  y=8;
+        //arithmatic   +  -  *   %   **
+        document.write(x+y,'<br>');
+        document.write(x*7,'<br>');
+        document.write(x-5,'<br>');
+        document.write(y/2,'<br>');
+        document.write(y*3,'<br>');
+
+        //relation operation <  >  >=  <=  ==   !=   ===    !==
+        document.write(x>=0,'<br>');
+        let z="8";
+        document.write(y==z,'<br>');
+        document.write(y===z,'<br>');
+        document.write(y!=z,'<br>');
+        document.write(y!==z,'<br>');
+
+
+        //logical operation    &&   ||   !
+        document.write(y>=1 && y<=10,'<br>');
+        document.write(!(x>0),'<br>');
+
+        /* assignment   =
+            shorthand   +=   -=  *=   /=   %=   **=     */
+             
+            x+=40;   //x=x+40;
+            y*=15;   //y=y*15;
+            document.write(x,"<br>");
+            document.write(y,"<br>");
+
+
+        //concate    +
+        document.write("rama"+"rao<br>");
+        document.write(120+"apples<br>");
+        document.write("chandi"+"garh<br>");
+        document.write(40+true,"<br>");
+
+        /* increament   ++      var++     ++var
+                                post      pre
+           decrement    --      var--     --var
+                                post      pre      
+        */
+       x++;   //post
+       document.write(x,'<br>');
+       ++x;    //pre
+       document.write(x,'<br>');
+       --y;     //pre
+       document.write(y,'<br>');
+       y--;      //post
+       document.write(y,'<br>');
+       document.write(x++,'<br>');
+
+
+       //ternary       (condition)?:  statement1:statement2
+
+       document.write(x%2===0? "even number":"odd number");
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

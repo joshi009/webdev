@@ -1,0 +1,35 @@
+/* define external style */
+
+body{
+    
+    
+      /* background:linear-gradient(45deg,#008000,#ffff00); */
+    /* background:linear-gradient(to right,blue,cyan); */
+   background-color:bisque;
+   
+
+}
+
+#flex{
+  display:flex;
+ text-align: center;
+ justify-content: space-around;
+ padding-top: 20px;
+ 
+}
+
+#flex img{
+ 
+  width: 100px;
+  height: 200px;
+  
+}
+
+  .offer{
+    background:red;
+}
+
+  .price{
+    font-size: 24px;
+    background:green ;
+  }

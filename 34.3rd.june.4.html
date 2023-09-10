@@ -1,0 +1,26 @@
+<!-- file upload -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My Web Page</title>
+    <link rel="icon" href="icon2.png">
+   
+</head>
+<body>
+    <h2>demo on file upload</h2>
+    <form action="uploadfiles.php">
+        <input type="file"id="f1" name="f1"> <!--1file,any size,any type-->
+        <br>
+        <input type="file" name="f2" id="f2" multiple>
+        <br>
+        <input type="file" name="f3" id="f3" accept=".pdf,.doxc">
+        <br>
+        <!-- accept="image"/*   accept="audio"/*     accept="videp"/*
+        accept="application"/* -->
+        <input type="submit" name="sb" id="upload">
+
+    </form>
+</body>
+</html>

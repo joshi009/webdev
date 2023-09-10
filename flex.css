@@ -1,0 +1,14 @@
+/* style fo flex application */
+<style
+#Flex{
+    display:Flex;
+   background-color:rgb(207, 33, 33);
+   text-align: center;
+}
+
+
+#flex img{
+    width: 150px;
+    height: 200px;
+    
+}
