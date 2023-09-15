@@ -69,7 +69,7 @@ const showPasswords = () => {
     }
     website.value = ""
     username.value = ""
-    password.value = ""
+    password.value = "" 
 }
 
 console.log("Working");
