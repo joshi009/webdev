@@ -1,0 +1,20 @@
+Blackbody radiation is a term used to describe the relationship between an object's temperature, and the wavelength of electromagnetic radiation it emits. A black body is an idealized object that absorbs all electromagnetic radiation it comes in contact with.
+
+Why is it called black body radiation?
+
+The radiation emitted by a black body in thermal equilibrium with its environment is called black-body radiation. The name "black body" is given because it absorbs all colors of light. In contrast, a white body is one with a "rough surface that reflects all incident rays completely and uniformly in all directions."
+
+Where is black body radiation used?
+The blackbodies are used for lighting, heating, security, thermal imaging, as well as testing and measurement applications.
+
+Who discovered black bodies?
+
+Gustav Kirchhoff
+The term black body was introduced by Gustav Kirchhoff in 1860. Blackbody radiation is also called thermal radiation, cavity radiation, complete radiation or temperature radiation.
+
+What is the law of the black body?
+
+The energy output of a blackbody is a function of its temperature and is not spread uniformly across all wavelengths. Theoretically, black bodies are surfaces that absorb all incident heat radiation. Mathematically, it is described by Stefan-Boltzmann law, Planck's law, and Wein's displacement law.
+
+
+
