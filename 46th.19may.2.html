@@ -3,7 +3,7 @@
 <head>
     <title>my demo page</title>
     <link rel="icon" href="icon2.png">
-    <title>JS16</title>
+    <title>JS17</title>
 </head>
 <body>
     <div>
@@ -11,11 +11,24 @@
         <input type="text" id="firstNum"/> <br>
         <label>second number</label> <br>
         <input type="text" id="secNum"/> <br>
-        <button>Addition</button> 
+        <button onclick="addition()">Addition</button> <br>
+        <output id="op"></output>
+
     </div>
 
     <script>
-        
+        function addition()
+        {
+             let X,Y,res;   //local declarations
+            X = parseFloat(firstNum.value);  //data collecting
+            Y = parseFloat(secNum.value);
+            res = X+Y;
+            // document.write("Sum is "+res);   OR
+            // console.log("Sum is" +res)  OR
+            // alert("Sum is"+res);  OR
+            op.value="Sum is"+res;
+        }
+
     </script>
 </body>
 </html>

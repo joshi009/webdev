@@ -1,0 +1,90 @@
+<!-- simple interst callculator -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>JS19</title>
+    <style>
+        div{
+            width:240px;
+            background:cyan;
+            border-radius:20px;
+            box-shadow:5px 5px 15px #330099;
+            color:#0000ff;
+            margin:auto;
+            padding:50px;
+            }
+            h2{
+                text-align: center;
+                text-decoration: underline;
+
+            }
+            input{
+                border: none;
+                outline: none;
+                font-size: 20px;
+                width: 180px;
+                background: cyan;
+                border-bottom: 2px solid blue;
+
+            }
+            button{
+                width: 180px;
+                height: 30px;
+                font-size: 18px;
+                background: #0000ff;
+                color: white;
+                border:0;
+                border-radius:6px;
+            }
+            button:hover{
+                background: #0dca49;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>Interest calc</h2>
+        <p>
+            <label>principal Amount</label> <br>
+            <input type="text" id="pamt"> <span>&#8377;</span>
+        </p>
+        <p>
+            <label>Rate of Interest</label> <br>
+            <input type="text" id="roi" maxlength="3"> <span>%</span>
+        </p>
+        <p>
+            <label>Time</label> <br> 
+            <input type="text" id="time" maxlength="2"> <span>Year(s)</span>
+        </p>
+        <p Align="center">
+            <button onclick="getAmount()">Get interest</button>
+        </p>
+        <p>
+            <output id="intAmt"></output> <br>
+            <output id="totAmt"></output> <br>
+        </p>
+         
+    </div>
+    <script>
+        function getAmount()
+        {
+            let p,t,r,si,tamt;   //local dec's
+            p = pamt.value;      //data coll
+            t = time.value;
+            r = roi.value;
+            si = p*t*r/100;
+            tamt = parseFloat(p)+si;
+            //data displaying
+            intAmt.value = "Interest Amount"+si;
+            totAmt.value = "Total Amount"+tamt;
+
+        }
+    </script>
+</body>
+</html>
