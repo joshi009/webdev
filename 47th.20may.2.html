@@ -1,0 +1,41 @@
+<!-- 
+interpolation
+=> sub values or expr dynamically bet strings is called as "SI"
+=>use in data print or data assigning
+=>req template literal
+=>since JS6
+   syn:-       '${value/expr}'
+                'text ${value/expr} text ${value/expr} text....'
+  d.w("sum is "+res) 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>JS21</title>
+</head>
+<body>
+    <h3>demo on interpolation </h3>
+    <script>
+        let n="ram";
+        document.write(n+"<br>");
+        document.write(`${n}<br>`);
+        document.write("${n}<br>");  //invalid
+
+        document.write("Sum is 10+20<br>");   //invalid
+        document.write(`Sum is ${10+20}<br>`);
+
+        let x=`Hi ${n}`;
+        document.write(`${x}<br>`);
+
+        let a=15,b=9;
+        let res=`Sum is ${a+b}<br>
+            product is ${a*b}<br>
+            div is ${a/b}<br>`;
+
+        document.write(`${res}`);
+    </script>
+</body>
+</html>
