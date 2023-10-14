@@ -8,11 +8,11 @@ h2{
 }
 
 h3{
-    color: red;
+    color: green;
 }
-h4{
-    color: red;
-}
+/* h4{
+    color: black;
+} */
 
 body{
     background-image: url('background3.jpeg');
