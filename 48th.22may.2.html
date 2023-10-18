@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>JS27</title>
+</head>
+<body>
+    <h3>demo on for loop</h3>
+    <script>
+        // to print 1 to 20 number
+        for(let i=1; i<=20; i++){
+            document.write(`${i}`);
+        }
+        document.write("<br>");
+
+
+        // to print 20 to 1 number
+        for(let i=20; i>=1; i--){  //i-=1
+            document.write(`${i}`);
+        }
+
+        document.write("<br>");
+        
+        for(let i=1,j=1,k=1; i<=10; i++,j++,k++)
+        document.write(`${i} &nbsp;${j} &nbsp; ${k}<br>`);
+    
+
+        let i=1;
+        for(; ;)
+        {
+            if (i===25)
+                break;
+                document.write(`${i}`);
+                i++;
+        }
+    </script>
+</body>
+</html>

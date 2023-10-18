@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>JS27</title>
+</head>
+<body>
+    <h3>demo on do..while loop</h3>
+    <script>
+        // to print 1 to 20 number
+        let i=1;
+        do{
+            document.write(`${i}`);
+            i++;
+        }
+        while(i<=20);
+        document.write(`<br>`)
+
+        // to print 20 to 1 number
+         i=20;
+        do{
+        document.write(`${i}`);
+        i--;
+        }
+        while(i>=1);
+    
+    </script>
+
+    <h3>demo on continue</h3>
+    <script>
+        let n=+prompt("enter the +ve number");
+        for(let i=1; i<=n; i+=1)
+        {
+            if(i===9 || i===17 || i===24)  //if(i%4===0) also used it
+            continue;
+            document.write(`${i}`);
+        }
+    </script>
+
+    
+</body>
+</html>

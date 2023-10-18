@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>JS27</title>
+</head>
+<body>
+
+    <h3>demo on continue</h3>
+    <script>
+        let n=+prompt("enter the +ve number");
+        for(let i=1; i<=n; i+=1)
+        {
+            if(i===9 || i===17 || i===24)  //if(i%4===0) also used it
+            continue;
+            document.write(`${i}`);
+        }
+        document.write(`<br>`)
+         n=+prompt("enter the +ve number");
+        for(let i=1; i<=n; i+=1)
+        {
+          if(i%4===0) 
+            continue;
+            document.write(`${i}`);
+        }
+    </script>
+
+    
+</body>
+</html>
