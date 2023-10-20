@@ -1,0 +1,33 @@
+<!-- 
+
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>JS31</title>
+</head>
+<body>
+    <label>Table number</label>
+    <input type="text" name="" id="tableNum">
+    <button Onclick="printTable()"> Print Table </button>
+    <script>
+        function printTable()
+        {
+            let n,i,res;
+            n=tableNum.value;
+            for(i=1;i<=20;i++)
+            {
+                res=n*i;
+                document.write(`${n}*${i}=${res}<br>`);
+            }
+
+        }
+    </script>
+
+</body>
+</html>
