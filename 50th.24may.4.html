@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Array</title>
+</head>
+
+<body>
+    <h3>demo on Array</h3>
+    <script>
+        //finding max & min element of array
+        const eles = [];
+        let s = +prompt("enter no. of values");
+        for (let i = 0; i < s; i++)
+            eles[i] = +prompt(`enter eles(${i})`);
+
+        let max = eles[0];    //assume
+        let min=eles[0];
+        for (let i = 1; i < eles.length; i++)
+        {
+            if (eles[i] > max)
+                max = eles[i];
+
+
+            if (eles[i] < min)
+                min = eles[i];
+        }
+        document.write(`Eles  :${eles}<br>`);
+        document.write(`Max Ele  :${max}<br>`);
+        document.write(`Min Ele  :${min}<br>`);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Array</title>
+</head>
+<body>
+    <h3>demo on arrays</h3>
+    <script>
+        // 1st it stores diff types of data
+        let a=["ram",30,5.11,true,new Date()];
+        document.write(`${a}<br>`);
+
+        //2nd
+        const b=[10,20,30];  //array init
+        document.write(`B  :${b}<br>`);
+        b[1]=22;  //modification
+        b[3]=44;
+        document.write(`B  :${b}<br>`);
+
+
+        //3rd dynamic array
+        const eles=[11,22,33,44,55,66,77,88,99];
+        document.write(`Elements ${eles}<br>`);
+        eles.length=5;    //reduces
+        document.write(`Elements ${eles}<br>`);
+        eles.length=7;    //increament
+        eles[5]=101;
+        eles[6]=202;
+        document.write(`Elements ${eles}<be>`);
+
+         
+        //4th dynamic value
+        const data=[];
+        let s=+prompt("enter no. of value");
+        for(let i=0; i<s; i++)
+        data[i]=prompt("enter value");
+        document.write(`data  :${data}<br>`);
+
+
+
+
+    </script>
+</body>
+</html>
