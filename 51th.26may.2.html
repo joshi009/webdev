@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Array</title>
+</head>
+<body>
+    <h3>demo on ... operator</h3>
+    <script>
+        const a =[10,20,30,40];
+        const b =[...a];  //array value are  coping
+        document.write(`A:${a}<br>`);
+        document.write(`B:${b}<br>`);
+
+        const X=[11,22,33,44,55];
+        const Y=[12,,34,56];
+        const Z=[...X,...Y];   //array appending/matching  
+        document.write(`X:${X}<br>`);
+        document.write(`Y:${Y}<br>`);
+        document.write(`Z:${Z}<br>`);
+    </script>
+</body>
+</html>
