@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Array</title>
+</head>
+<body>
+    <h3>demo on array method</h3>
+    <script>
+        const arr=[10,20,30,40,50,30,60,70,80,30,90,30];
+        document.write(`Elements ${arr}<br>`);
+
+        document.write(`${arr.includes(30)}<br>`);
+        document.write(`${arr.includes(55)}<br>`);
+
+        document.write(`${arr.indexOf(30)}<br>`);
+        document.write(`${arr.indexOf(654)}<br>`);
+        document.write(`${arr.indexOf(30,6)}<br>`);
+        document.write(`${arr.lastIndexOf(30)}<br>`);
+
+
+        document.write(`${arr.indexOf(30,arr.indexOf(30)+1)}<br>`);
+         
+        arr.reverse();
+        document.write(`reversed ${arr}<br>`);
+
+        arr.sort();
+        document.write(`sort ${arr}<br>`);
+
+        arr.reverse();
+        document.write(`sort ${arr}<br>`)
+
+        // join();
+        document.write(`${arr.join(" $")}<br>`);
+
+
+
+    </script>
+</body>
+</html>

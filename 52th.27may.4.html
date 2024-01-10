@@ -1,0 +1,57 @@
+<!-- => named block,block is a set of instructions
+=> used to perform task
+=> internal or external
+=> Adv: reuse,to advoid repeat code,readbulity
+
+  
+
+   SYN: 
+        funcion  fun-name(params)     <>   prototype
+        {
+            local declerations
+            statements               <> body
+            return value;
+        }
+         
+
+        types:
+        named function,
+        expressional function,
+        arrow function, 
+        immediate inworked function
+         -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Function</title>
+
+    <script>
+        //function defination
+        function isPrime(n)
+        {
+            let count=0,i;
+            for(i=1;i<=n;i++)
+            {
+                if(n%i===0)
+                  count++;
+            }
+            if(count===2)
+              return"Prime Number";
+            else
+            return"Not a Prime Number";
+        }
+    </script>
+
+</head>
+<body>
+    <h3>demo on named funtcion</h3>
+    <script>
+        let x=+prompt("enter number");
+        document.write(`${isPrime(x)}`);    // funtion calling
+    </script>
+</body>
+</html>

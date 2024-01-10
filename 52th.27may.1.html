@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Array</title>
+</head>
+<body>
+    <h3>demo on array method</h3>
+    <script> 
+
+          const arr= [];
+          arr.unshift(10);
+          arr.unshift(20);
+          arr.unshift(30);
+          arr.unshift(234);
+          let n=arr.unshift(40);//push return the length of the array
+            document.write(`<br>arr${arr}`);
+            document.write(`<br>${n}`);
+
+            document.write("new arrat after pushing"+arr);
+
+
+         let e=arr.shift();    
+         document.write(`<br>1st${e}`);
+         document.write(`<br>2nd ${arr.shift()}`);
+         arr.unshift(11,22,33);
+         document.write(`<br>${arr}`);
+
+
+        //  const arr1=[];
+        //  arr1.push(12);
+        //  arr1.push(24);
+        //  arr1.push(77);
+        //  arr1.push(897);
+        //  let k=arr1.push(34);
+        //  document.write(`<br> ${arr1}`); 
+        //  let b=arr1.pop();
+        //  document.write(`<br>1st${k}`);
+    </script>
+</body>
+</html>

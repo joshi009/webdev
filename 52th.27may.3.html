@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Array</title>
+</head>
+<body>
+    <h3>demo on array methods</h3>
+    <script>
+        const arr=[10,20,30,40,50,60,70,80,90];
+        document.write(`Elements :${arr}<br>`);
+
+
+        //deletion     splice(st-ind,count)
+        let x=arr.splice(6,1);
+        document.write(`after del  :${arr}<br>`);
+        document.write(`${x}<br>`);
+        arr.splice(2,3);
+        document.write(`after del  :${arr}<br>`);
+
+
+
+          //101,10,20,60,80,  90
+        // insertion    splice(st-ind,0,new eles)
+        arr.splice(0,0,101);
+        document.write(`after ins  :${arr}<br>`);
+        arr.splice(5,0,202,303,404);
+        document.write(`after ins :${arr}<br>`);
+
+
+
+        //101,10,20,60,80,202,303,404,90
+        //update     splice(st-ind,count,new eles)
+        arr.splice(1,1,111);
+        document.write(`after update :${arr}<br>`);
+        arr.splice(7,2,222,333);
+        document.write(`after update :${arr}<br>`);
+
+
+
+
+
+    </script>
+</body>
+</html>
