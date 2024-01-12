@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Function</title>
+
+    <script>
+        //fun developing
+        const sum = function(...n){
+            let total = 0;
+            for(let X of n)
+            total += X;
+
+            return total;
+        }
+        
+    </script>
+
+</head>
+<body>
+    <h3>demo on function with rest param</h3>
+    <script>
+        document.write(`${sum(10,20)}<br>`);
+        document.write(`${sum()}<br>`);
+        document.write(`${sum(10,30,2,6,88,)}<br>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Function</title>
+
+    <script src="js\expression function.js"></script>
+</head>
+<body>
+    <h3>demo on expressional function</h3>
+    <script>
+        let a=add(12,56);    //fun calling
+        document.write(`${a}<br>`);
+
+        document.write(`${product(15,9)}<br>`);
+
+        const arr=[101,50,30,80,60];
+        document.write(`Eles${arr}<br>`);
+        // extending functionality
+        arr.sort(function(i,j){return i-j;});                     //(function(i,j){return j-i;})    //call back
+        document.write(`Sort Eles ${arr}<br>`);
+
+        // extending functionality
+        arr.forEach(function (e ) 
+        {
+            document.write(`${e} `);
+        });
+
+
+    </script>
+</body>
+</html>

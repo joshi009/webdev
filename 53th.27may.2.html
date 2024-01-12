@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Function</title>
+    <script src="js/arrow function.js"></script>
+
+
+</head>
+<body>
+    <h3>demo on Arrow function</h3>
+    <script>
+        myfun();
+        let res=add(12,56);   //fun calling
+        document.write(`${res}<br>`);
+        document.write(`${power(2,6)}<br>`);
+        document.write(`${natsum(10)}<br>`);
+
+
+        const arr=[101,5,30,80,60];
+        document.write(`Eles${arr}<br>`);
+        // extending functionality
+        arr.sort( (i,j)=> i-j);             //call back
+        document.write(`Sort Eles ${arr}<br>`);
+
+
+
+        // extending functionality
+        arr.forEach( (e)  => 
+        {
+            document.write(`${e} `);
+        });
+
+
+    </script>
+</body>
+</html>
