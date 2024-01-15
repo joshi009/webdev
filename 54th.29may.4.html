@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPS</title>
+</head>
+
+<body>
+    <h3>demo on nested object</h3>
+    <script>
+        // object
+        const person = {
+            name: 'sam', age: 30, gender: 'male',
+            address:{area:'apet',city:'hyd',state:'ts',pin:50012},
+            getAddress: function () {
+                return `${this.address.area}, ${this.adderss.city}, ${this.address.state}, ${this.address.pin}`;
+            }
+        }
+
+        document.write(`${person.name}<br>`);
+        document.write(`${person.age}<br>`);
+        document.write(`${person.gender}<br>`);
+        document.write(`${person.getAddress()}<br>`);
+
+    </script>
+
+</body>
+
+</html>

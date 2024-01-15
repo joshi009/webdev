@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPS</title>
+</head>
+<body>
+    <h3>demo on object literal</h3>
+    <script>
+        //object
+        const stud = {  //properties
+            rno:11,"name":'kaur',total:340,
+            // method 
+            getresult:function(){
+                if(stud.total>=400)   //this.total
+                return "pass";
+            else
+            return "fail";
+            
+            }
+        }
+
+        document.write(`Student Details:<br>`);
+        document.write(`${stud.rno} &nbsp; &nbsp; ${stud.name} &nbsp; &nbsp; ${stud.total}<br>`);
+        document.write(`${stud.getresult()}<br>`);
+
+    </script>
+</body>
+</html>

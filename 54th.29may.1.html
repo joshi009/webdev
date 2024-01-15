@@ -1,0 +1,51 @@
+<!-- example on JS Object -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPS</title>
+
+
+</head>
+
+<body>
+    <h3>demo on object literal</h3>
+    <script>
+        // object created
+        const ob = {};
+        document.write(`${ob}<br>`);
+
+        // object instantiation(memory location/storeing data)
+        const stud = {
+            rno: 2237201,
+            name: "Joshi",
+            course: "Html"
+        }
+        document.write(`${stud}<br>`);
+        document.write(`Rollno:${stud.rno}<br>`);
+        document.write(`Name:${stud.name}<br>`);
+        document.write(`Course:${stud.course}<br>`);
+
+
+        const stud2={ron:22,name:"sam",course:"c"};
+
+        const example= {"id":186,name:"sam","job":'SSE',"sal":44000};
+
+        const v = Object.values(example);
+        const k = Object.keys(example);
+
+        
+        document.write(`keys :${k}<br>`);
+        document.write(`values :${v}<br>`);
+
+
+
+    </script>
+
+</body>
+
+</html>
