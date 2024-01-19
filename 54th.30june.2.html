@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPS</title>
+
+</head>
+<body>
+    <h3>demo on prototyping</h3>
+    <script>
+        const ob ={ };
+        document.write(`${ob}<br>`);
+
+        //prototyping
+        ob.x=10;    //its adding x to ob
+        document.write(`X ${ob.x}<br>`);
+
+        const ob2= { };
+        // prototyping
+        ob2.y=20;       // its adding y to ob2
+
+        document.write(`Y ${ob2.y}<br>`);
+
+        // prototyping
+        Object.prototype.n=101;   //its adding n to ob & ob2
+        document.write(`ob.n ${ob.n}<br>`);
+        document.write(`ob2.2${ob2.n}<br>`);
+        Object.prototype.m1=function(){
+            document.write('hi,i am method<br>');
+        };
+        ob.m1();
+        ob2.m1();
+    </script>
+</body>
+</html>

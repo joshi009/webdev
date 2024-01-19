@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPS</title>
+     
+    <script src="js/Employe.js"></script>
+
+
+</head>
+<body>
+    <h3>demo on constructor function</h3>
+    <script>
+        const emp1 = new Employee();
+        document.write(`${emp1.getEmp()}<br>`);
+
+        const emp2 = new Employee(11,"sam",45000);
+        document.write(`${emp2.getEmp()}<br>`);
+
+        const emp3 = new Employee(22,"jam",75000);
+        document.write(`${emp3.getEmp()}<br>`);
+
+    </script>
+</body>
+</html>

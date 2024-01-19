@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPS</title>
+    
+</head>
+<body>
+    <h3>demo on array object</h3>
+    <script>
+        const books =[
+            {title:"C prog",author:"DR",price:400},
+            {title:"Web Design",author:"Time",price:500},
+            {title:"Database",author:"Larry",price:600},
+        ];
+
+        document.write(`${books}<br>`);
+        books.forEach(
+            function(b){
+                document.write(`${b.title} &nbsp; &nbsp; ${b.author}&nbsp;&nbsp;${b.price}<br>`);
+            }
+
+        );
+
+        // OR
+        console.table(books);
+
+    </script>
+</body>
+</html>
