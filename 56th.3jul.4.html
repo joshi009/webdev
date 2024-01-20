@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>DOM</title>
+
+</head>
+
+<body>
+    <h3>demo on removing & adding element</h3>
+    <div id="div1">
+        <h1 id="head2">Red Apples</h1>
+        <h2 id="head3">Yellow Mangoes</h2>
+        <p is="head4">Black Grapes</p>
+        <button onclick="document.querySelector('h3').remove()">remove element</button>
+        <!-- <button onclick="document.querySelector('#head2').remove()">remove element</button> -->
+
+    </div>
+    <br><br>
+    <div id="div2">
+        <button id="add">add element</button>
+    </div>
+    <script>
+        //adding new element
+        document.querySelector("#add").onclick=function(){
+            const h3 = document.createElement("h3");  //<h3></h3>
+            h3.id="hh3";   //<h3 id="hh3"></h3>
+            h3.innerText="Hello World";    //<h3 id="hh3">Hello World</h3>
+            h3.style.color="yellow";
+            h3.style.background="red";   //<h3 id="hh3" style="color:yellow;background:red;">Hello World</h3>
+
+            // document.body.appendChild(h3);   //OR
+            document.querySelector("#div1").appendChild(h3);
+
+
+        }
+    </script>
+</body>
+
+</html>

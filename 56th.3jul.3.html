@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>DOM</title>
+
+</head>
+<body>
+    <h3>demo on html attributes</h3>
+    <img src="virat3.jpg" alt="virat" width="300px" height="400px">
+    <script>
+        const img = document.images[0];
+        // OR
+        // const img = document.querySelector("img");
+        console.log(img.getAttribute("width")+"<br>");
+        console.log(img.height);
+        img.width="600";
+        // img.src="images.jpeg";
+        // img.removeAttribute("src");
+
+    </script>
+    <br>
+    <button>change pic</button>
+    <script>
+        document.querySelector("button").onclick=()=>{
+            img.src="images.jpeg";
+        }
+            // img.setAttribute("src","viart2.jpeg");
+        //     // document.querySelector("button").onclick=()=>{
+        //     // img.src="virat2.jpeg";
+        // }
+    </script>
+</body>
+</html>
