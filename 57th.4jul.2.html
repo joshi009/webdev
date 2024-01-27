@@ -1,0 +1,45 @@
+<!--  class
+=> its encapsulated prdduct
+=>wrapping upof data & operations
+=> easy coding
+=>class is collection props,methods & constructor
+=>template/blue print
+=>every class they need object for member
+Syn:
+     class className
+     {
+        constructor
+        methods   
+
+     }
+
+     object Syn:
+            const refname = new className();
+    ---> 
+
+<!-- example on OOPs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPs</title>
+    <script src="js/Sample.js"></script>   <!--linking-->
+
+</head>
+<body>
+    <h3>demo on class</h3>
+    <script>
+        const ob1 = new Sample();
+        ob1.x=10;   //prototyping
+
+        const ob2 = new Sample();
+        ob2.x=20;  //prototyping
+        Sample.prototype.z=30;
+        console.log(ob1.x);
+        console.log(ob2.y);
+        console.log(ob1.z);
+        console.log(ob2.z);
+    </script>
+</body>
+</html>

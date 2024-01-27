@@ -1,0 +1,31 @@
+<!-- methods
+   =>  non-static
+        =>  NSM we can access using object only
+        =>  no keyword required
+   => staic     
+        =>SM we can access using className only
+        =>"static" keywords required -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPs</title>
+    <script src="js/maths.js"></script>   <!--linking-->
+
+</head>
+<body>
+    <h3>demo on static methods</h3>
+    <script>
+        document.write(`${maths.add(12,34)}<br>`);
+        document.write(`${maths.product(15,9)}<br>`);
+        document.write(`${maths.power(2,6)}<br>`);
+
+        //new maths().add(1,2);   //error
+        //maths.max(10,20);    //error
+        document.write(`${new maths().max(10,90,6,30,80)}`);
+
+    </script>
+</body>
+</html>

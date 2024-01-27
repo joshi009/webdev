@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>DOM</title>
+
+</head>
+<body>
+    <h3>demo on adding element</h3>
+   <div id="div1">
+    <button id="bt">add to cart</button>
+
+   </div>
+   <script>
+    document.querySelector("#bt").onclick=function(){
+        //img object creation
+        const img=document.createElement("img");
+        img.src="iphone.webp";
+
+        // h4 object creation
+            const h4=document.createElement("h4");
+            h4.innerText="iphone14";
+            h4.style.fontSize="40px";
+            h4.style.margin="10px";
+            img.style.width="350px";
+            img.style.margin="20px";
+            
+
+            // div object  creation for new price
+            const np=document.createElement("div");
+            np.innerHTML="&#8377;40000";
+            np.style.fontSize="22px";
+            np.style.margin="15px";
+
+            // div Object creation for old price
+            const op=document.createElement("div");
+            op.innerHTML="<strike>&#8377;45000</strike>";
+            op.style.fontSize="22px";
+            op.style.margin="15px";
+
+            // container object 
+            const product=document.createElement("div");
+            product.style.width="400px";
+            product.style.height="620px";
+            product.style.background="cyan";
+
+            // adding items ti container 
+            product.appendChild(img);
+            product.appendChild(h4);
+            product.appendChild(np);
+            product.appendChild(op);
+
+            // adding items ti container 
+            document.body.appendChild(product);
+            
+    }
+   </script>
+       
+</body>
+</html>
