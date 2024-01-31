@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPs</title>
+    <script>
+        class Parent
+        {
+            constructor()
+            {
+                document.write(`Parent constructor invoked<br>`);
+            }
+        }
+            class Child extends Parent   //SLI
+            {
+                constructor()
+                {
+                    super();    //it call Parent const
+                    document.write(`Child const invoked`);
+                }
+            }
+    </script>
+</head>
+<body>
+    <h3>demo on single level inheritance</h3>
+    <script>
+        // new Parent();
+        new  Child();   //C+P
+    </script>
+</body>
+</html>

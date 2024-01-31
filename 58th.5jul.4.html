@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPs</title>
+    <script>
+        //GP
+        class One
+        {
+            constructor()
+            {
+                document.write(`One constructor invoked<br>`);
+            }
+        }
+            //Parent class
+            class Two extends One   //SLI
+            {
+                constructor()
+                {
+                    // super();    //it call One const
+                    document.write(`Two constructor invoked<br>`);
+                    super();    //it call One const
+                }
+            }
+            // Child
+            class Three extends Two
+            {
+                constructor()
+                {
+                    // super();   //it calls Two const
+                    document.write(`Three constructor invoked<br>`);
+                    super();   //it calls Two const
+
+                }
+            }
+    </script>
+</head>
+<body>
+    <h3>demo on multi-level inheritance </h3>
+    <script>
+        //new One();
+        //new Two();
+        new Three();   //3+2+1
+    </script>
+</body>
+</html>

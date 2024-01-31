@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPs</title>
+    <script src="js/book2.js"></script>
+</head>
+<body>
+    <h3>demo on constructor</h3>
+    <script>
+        const b1 = new Book();
+        document.write(`${b1.getBookInfo()}<br>`);
+
+        const b2 = new Book("C prog","DR","340");
+        document.write(`${b2.getBookInfo()}<br>`);
+
+        document.write(new Book("Web Design","Tim","500").getBookInfo());
+
+    </script>
+</body>
+</html>
