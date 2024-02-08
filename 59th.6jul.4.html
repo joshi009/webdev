@@ -1,0 +1,50 @@
+<!-- 
+    two types of validation 
+     ->implicit
+     ->explicit
+
+     timing of validation
+     ->while typing
+     ->while submitting
+     while cursor moving
+-->
+<!-- exmaple on vildation @typing-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>validation</title>
+
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form action="test.html">
+        <label>Fullname</label><br>
+        <input type="text" name="fullName" id="fullName" required><br>
+        <label>Email id</label><br>
+        <input type="email" name="mid" id="mid" required><br>
+        <label>Contact number</label><br>
+        <input type="text" name="phone" id="phone" required maxlength="10"><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        // // checking full name
+        // document.querySelector("#fullname").onkeypass=function(fullName){
+        //     let ch=fullName.which;   //returns  ASII
+        //     console.log(ch);
+        //     if(!((ch>=65&&ch<=90)||(ch>=97&&ch<=122)||ch===32))
+        //     fullName.preventDefault();    //dont allow the key
+        // }
+
+        // checking phone number
+        document.querySelector("#phone").onkeypass=function(phone){
+            let ch=phone.which;   //returns  ASII
+            console.log(ch);
+            if(!(ch>=48&&ch<=57))   // 0 to 9
+            phone.preventDefault();    //don't allow the key
+        }
+    </script>
+</body>
+</html>

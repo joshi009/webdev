@@ -1,0 +1,51 @@
+<!-- exmaple on  Timer function -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Timer</title>
+
+</head>
+
+<body>
+    <h3>demo on timer function</h3>
+
+    <script>
+        /*  window.setTimeout(function(){
+               alert("hi,i am timeout");
+           },"5000");   
+        */
+    </script>
+
+    <h1 align="right"></h1>
+    <script>
+        // displaying digital time
+        setInterval(function () {
+            let d = new Date();
+            document.querySelector("h1").innerText = d.toLocaleTimeString();
+        }, "1000");
+
+    </script>
+    <hr>
+    <button id="start">Start</button>&nbsp;&nbsp;
+    <button id="stop">Stop</button>
+    <script>
+        let ti;   //timer index
+        //changing bg color
+        document.querySelector("#start").onclick = function () {
+            ti = setInterval(function () {
+                let c='#'+parseInt(Math.random()*1000000);
+                document.body.style.background=c;
+            }, "5000");
+        }
+        // stoping changing bg color
+        document.querySelector("#stop").onclick=function(){
+            clearInterval(ti);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>OOPs</title>
+    <script>
+        
+        class Parent
+        {
+            constructor()
+            {
+                document.write(`Parent constructor invoked<br>`);
+            }
+        }
+            class Child1 extends Parent   //SLI
+            {
+                constructor()
+                {
+                    super();    //it call Parent const
+                    document.write(`Child1 constructor invoked<br>`);
+                 }
+            }
+            class Child2 extends Parent
+            {
+                constructor()
+                {
+                    super();   //it calls Parent const
+                    document.write(`Child2 constructor invoked<br>`);
+ 
+                }
+            }
+    </script>
+</head>
+<body>
+    <h3>demo on Hierarchal inheritance </h3>
+    <script>
+        class One
+        {
+            constructor(x)
+            {
+                this.x=x;
+            }
+        }
+        class Two extends One
+        {
+            constructor(x,y)
+            {
+                super(x);
+                this.y=y
+            }
+            sum(){
+                return this.x+this.y;
+            }
+            product(){
+                return this.x*this.y;
+            }
+        }
+        //testing
+        const ob = new Two(10,20);
+        document.write(`${ob.sum()}<br>`);
+        document.write(`${ob.product()}<br>`);
+        // new Child1();    //C1+P
+        // new Child2();   //C2+P
+
+    </script>
+</body>
+</html>

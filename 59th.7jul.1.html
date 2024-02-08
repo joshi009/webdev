@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>validation</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>password Rest Form</h2>
+    <form action="reset.html">
+        <label>New password</label>
+        <br>
+        <input type="password" name="pwd" id="pwd" required>
+        <span id="errpw"></span>
+        <br>
+        <label>Confirm Password</label>
+        <br>
+        <input type="password" name="cpwd" id="cpwd" required>
+        <span id="errcpw"></span>
+        <br>
+
+        <br>
+        <input type="submit">
+
+    </form>
+
+    <script>
+        document.forms[0].onsubmit = function (frm) {
+            const pwd = document.querySelector("#pwd");
+            let ch, pword, upper = false, lower = false, digit = false, sym = false;
+            pword = pwd.value;
+            for (let i = 0; i < pword.length; i++)   //"hi123"
+            {
+                ch = pword[i];
+                if (ch >= '0' && ch <= '9')
+                    digit = true;
+                else if (ch >= 'A' && ch <= 'Z')
+                    upper = true;
+                else if (ch >= 'a' && ch <= 'z')
+                    lower = true;
+                else
+                    sym = true;
+            }
+            if(lower===false||upper===false||digit===false||sym===false||pword.length<8)   
+            {
+                document.querySelector("#errpw").innerText="plz set proper password";
+                pwd.style.border="2px solid red";
+                frm.preventDefault();
+            }
+        //     //checking two password are same or not
+            const cp=document.querySelector("#cpwd").value;
+            if(pword!==cp){
+                document.querySelector("#errcpw").innerText="Both Password Should be Same";
+                frm.preventDefault();
+            }
+        }
+    </script>
+</body>
+
+</html>

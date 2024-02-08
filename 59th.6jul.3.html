@@ -1,0 +1,31 @@
+!<!-- exmaple on  Timer function -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>Timer</title>
+
+</head>
+<body>
+    <h1 align="center">Image Slide Show</h1>
+    <div style="width: 100%; height: 350px; text-align: center;">
+        <img src="virat3.jpg" style="width: 40%;height:120%;">
+
+    </div>
+
+    <script>
+        const imgs=["virat2.jpeg","background1.jpeg","background2.jpeg","background3.jpeg","download.jpeg",]
+        let index=1;
+        setInterval( ()=>{
+            if(index===imgs.length)
+            index=0;
+            document.images[0].src=imgs[index];
+            index++;
+        },"3000");
+    </script>
+    <br>
+    <button onclick="window.print()">Print Page</button>
+</body>
+</html>

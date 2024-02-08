@@ -1,0 +1,68 @@
+
+<!-- exmaple on vildation @cursor moving-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>validation</title>
+    <style>
+        input{
+            border: 2px solid;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form action="test.html">
+        <label>Firstname</label>
+        <br>
+        <input type="text" name="firstName" id="firstName" required>
+        <br>
+        <label>lastname</label>
+        <br>
+        <input type="text" name="lastName" id="lastName" required>
+        <br>
+        <label>Contact Number</label>
+        <br>
+        <input type="text" name="phone" id="phone" maxlength="10">
+        <br>
+        
+        <button>Submit</button>
+    </form>
+
+    <script>
+        // checking name
+        document.querySelector("#firstName").onblur=function(fna){
+            console.log("fna blur");
+         }
+         
+         document.querySelector("#lastName").onblur=function(lna){
+            console.log("lna blur");
+         }
+        
+         document.querySelector("#phone").onblur=function(ph){
+            console.log("ph blur");
+         }
+         
+        /*
+         document.querySelector("#firstName").onfocus=function(fna){
+            console.log("fna focus");
+         }
+         document.querySelector("#lastName").onfocus=function(lna){
+            console.log("lna focus");
+         }
+         document.querySelector("#phone").onfocus=function(ph){
+            console.log("phone focus");
+         }
+
+         */
+        
+    </script>
+</body>
+</html>
+
+
+
+time 1hour
