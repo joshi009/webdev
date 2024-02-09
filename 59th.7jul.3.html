@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my demo page</title>
+    <link rel="icon" href="icon2.png">
+    <title>validation</title>
+
+</head>
+
+<body>
+    <form action="upload.html">
+        <label>Upload id proof</label>
+        <br>
+        <input type="file" name="f1" id="f1" accept="image/*">
+        <br><br>
+        <label>Upload Marks Report</label>
+        <br>
+        <input type="file" name="f2" id="f2" accept="image/*" multiple>
+        <br><br>
+        <button>Submit</button>
+
+    </form>
+
+    <script>
+        //checking files size
+        document.querySelector("#f1").onchange=function(f1){
+            if(this.files[0].size>1048576)    //1048576 Bytes=1MB
+            {
+                alert("Sorry,Selected File is Too Large")
+                this.value="";
+            }
+        }
+
+        //checking no. of files
+        document.querySelector("#f2").onchange=function(f2){
+            if(this.files.length>8)   
+            {
+                alert("max no of files should 8")
+                this.value="";
+            }
+        }
+    </script>
+</body>
+
+</html>

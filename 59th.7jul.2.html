@@ -1,18 +1,19 @@
-
 <!-- exmaple on vildation @cursor moving-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>my demo page</title>
     <link rel="icon" href="icon2.png">
     <title>validation</title>
     <style>
-        input{
+        input {
             border: 2px solid;
         }
     </style>
 
 </head>
+
 <body>
     <h2>Registration form</h2>
     <form action="test.html">
@@ -28,41 +29,96 @@
         <br>
         <input type="text" name="phone" id="phone" maxlength="10">
         <br>
-        
+
         <button>Submit</button>
     </form>
 
     <script>
-        // checking name
-        document.querySelector("#firstName").onblur=function(fna){
+        // checking first name
+        document.querySelector("#firstName").onblur = function () {
+            const fna = document.querySelector("#firstName");
             console.log("fna blur");
-         }
-         
-         document.querySelector("#lastName").onblur=function(lna){
-            console.log("lna blur");
-         }
-        
-         document.querySelector("#phone").onblur=function(ph){
-            console.log("ph blur");
-         }
-         
-        /*
-         document.querySelector("#firstName").onfocus=function(fna){
-            console.log("fna focus");
-         }
-         document.querySelector("#lastName").onfocus=function(lna){
-            console.log("lna focus");
-         }
-         document.querySelector("#phone").onfocus=function(ph){
-            console.log("phone focus");
-         }
+            let ch, flag = false;
+            let fname = fna.value.toLowerCase();
+            for (let i = 0; i < fname.length; i++) {
+                ch = fname[i];
+                if (!(ch >= 'a' && ch <= 'z')) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag === true)
+                fna.style.border = "2px solid red";
+            else
+                fna.style.border = "2px splid";
 
-         */
+
+        }
+
+        // checking last name
+        document.querySelector("#lastName").onblur = function () {
+            const lna = document.querySelector("#lastName");
+            let ch, flag = false;
+            let lname = lna.value.toLowerCase();
+            for (let i = 0; i < lname.length; i++) {
+                ch = lname[i];
+                if (!(ch >= 'a' && ch <= 'z')) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag === true)
+                lna.style.border = "2px solid red";
+            else
+                lna.style.border = "2px splid";
+
+
+        }
+
+        // checking phone number
+        document.querySelector("#phone").onblur=function(){
+            const phone=document.querySelector("#phone");
+            console.log("ph blur");
+            let ch,flag=false;
+            let ph=ph.value;
+            for(let i=0;i<ph.length;i++)
+                {
+                    ch=ph[i];
+                    if(!(ch>='0'&&ch<='9')){
+                        flag=true;
+                        break;
+                    }
+                }            
+                if(flag===true)
+                    phone.style.border="2px solid red";
+                    else
+                    phone.style.border="2px splid";
+                
         
+            }
+        /*
+        document.querySelector("#lastName").onblur=function(lna){
+           console.log("lna blur");
+        }
+       
+        document.querySelector("#phone").onblur=function(ph){
+           console.log("ph blur");
+        }
+        
+       
+        document.querySelector("#firstName").onfocus=function(fna){
+           console.log("fna focus");
+        }
+        document.querySelector("#lastName").onfocus=function(lna){
+           console.log("lna focus");
+        }
+        document.querySelector("#phone").onfocus=function(ph){
+           console.log("phone focus");
+        }
+
+        */
+
     </script>
 </body>
+
 </html>
-
-
-
-time 1hour
