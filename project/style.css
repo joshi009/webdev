@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+row{
+    margin: 5px;
+    width: 100%; 
+			padding: 20px 40px; 
+			background-color: maroon; 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+}
+
